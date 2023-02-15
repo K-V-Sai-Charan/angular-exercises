@@ -1,0 +1,32 @@
+
+.bg-container{
+    background-image: url('../../assets/img/pexels-miguel-á-padriñán-255379.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form{
+    width: 500px;
+    background-color: aqua;
+}
+
+.font{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-clip: text;
+    background-color: #f3ec78;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

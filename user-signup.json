@@ -1,0 +1,46 @@
+{
+  "signup": [
+    {
+      "username": "Charan",
+      "mobile": 1122299933,
+      "email": "charan@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "username": "Mahesh",
+      "mobile": 1234321234,
+      "email": "mahesh@gmail.com",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "username": "shivadeep",
+      "mobile": 2324567656,
+      "email": "shiva@cap.com",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "username": "admin",
+      "mobile": 2324567656,
+      "email": "kvsai@gmail.com",
+      "password": "Charan73@",
+      "id": 4
+    },
+    {
+      "username": "Nithin",
+      "mobile": 6463457758,
+      "email": "nithin@gmail.com",
+      "password": "Nithin123@",
+      "id": 5
+    },
+    {
+      "username": "Hari",
+      "mobile": 2324567656,
+      "email": "hari@gmail.com",
+      "password": "Hari1234@",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<div class="col-8 offset-3 mb-3">
+  <h1>WELCOME TO ADMIN PAGE @<span>{{name}}</span></h1>
+</div>
+
+<div class="container col-6 mb-3">
+  <table class="table g-0 rounded-0">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Username</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data let i = index">
+        <td>{{ i + 1}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.password}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="col-2 offset-5">
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary" (click)="onClickLogout()">Logout</button>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="container ">
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="border p-3 rounded-3">
+        <div class="row g-0">
+            <div class="col text-center p-2 mb-3 bg-aqua">
+                <span class="fs-2 font">Register</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" formControlName="username" required>
+                <span class="formError" *ngIf="username && username.invalid && username.touched" style="color: red;">*Username is invalid</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="mobile" class="form-label">Mobile Number</label>
+                <input type="number" class="form-control" id="mobile" formControlName="mobile" required>
+                <span *ngIf="mobile && mobile.invalid && mobile.touched" style="color: red;">*Mobile number is invalid</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" formControlName="email" required>
+                <span *ngIf="email && email.invalid && email.touched" style="color: red;">*Enter valid Email Address</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" formControlName="password" required>
+                <span *ngIf="password && password.invalid && password.touched" style="color: red;">*Password is not valid</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2 offset-2">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="col-3 offset-3">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary" routerLink="/login">Login -></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col offset-2">
+                <span *ngIf="registered" style="color: green;">Successfully registered !!!</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col offset-2">
+                <span *ngIf="notRegistered" style="color: red;">Invalid Registration, please try again</span>
+            </div>
+        </div>
+    </form>
+</div>
